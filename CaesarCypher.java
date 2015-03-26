@@ -1,4 +1,5 @@
 package com.caesarcypher.nem;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -94,13 +95,5 @@ public class CaesarCypher {
 			dencrypted.append(rotateCharUp(data.charAt(i), rotation));
 		}
 		return dencrypted.toString();
-	}
-
-	public static void main(String[] args) {
-		char a = 'a';
-		a = CaesarCypher.rotateCharUp(a, 5);
-		System.out.println(a);
-		a = CaesarCypher.rotateCharDown(a, 5);
-		System.out.println(a);
 	}
 }
